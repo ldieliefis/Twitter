@@ -50,17 +50,17 @@ p{
 
 
 #header{
-	background: rgba(178,44,98, 0.7);
+	background: rgb(178,44,98);
 	width: 100%; 
 	height: 10%; 	
 	position: fixed;
 	z-index: 2;
 	}
 #logo a { 
-	color: #333; 
+	color: #dfdfdf; 
 	text-decoration: none; 
 	float: left; 
-	margin-left: 2%;
+	margin-left: 1%;
 	font-size: 30px; 
 	margin-top: 20px; 
 	font-weight: bold;
@@ -79,26 +79,25 @@ p{
 }
 
 #nav li{
-	margin-top: 9px;	
+	margin-top: 5px;	
 	float: left;
 	padding-left: 21px;
 }
 
 #nav li a { 
-	color: #333; 
-	opacity:0.7; 
+	color: #dfdfdf; 
 	font-size: 16px; 
 	text-decoration: none;
 	
 }
 #nav li a.active { 
-	color: #333; 
+	color: #dfdfdf; 
 	opacity:1;
-	border-bottom: 2px 
-	solid #333; 
+	border-bottom: 2px; 
+
 }
 #nav li a:hover { 
-	color: #333; 
+	color: #dfdfdf; 
 	opacity:1; 
 	}
 
@@ -111,7 +110,7 @@ p{
 	bottom:0px;
 	float: left;
 	background-repeat: no-repeat;
-	background-color: rgba(178,44,98, 0.7);
+	background-color: rgb(178,44,98);
 	
 }
 
@@ -119,21 +118,28 @@ p{
 	list-style: none;
 	margin: 0 auto;
 	list-style: none;
+
 }
 
 #sitemapNav li{
 	margin-top: 9px;	
-	padding-left: 2%;
-
+	padding-left: 0;
+	
 }
 
-#sitemapNav li a{
+#sitemapNav li a, li b{
 	text-decoration: none;
-	color: #333;
+	color: #dfdfdf;
+	margin-left: -18%;
+}
+
+#sitemapNav li b{
+	font-weight: normal;
+	margin-left: -40%;
 }
 
 #startPagina{
-	background:url(vogeltje.png);
+	background-color: #dfdfdf;
 	color: #fff;
 	height: 600px;
 	margin: 0;
