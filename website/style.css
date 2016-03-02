@@ -154,6 +154,7 @@ a:visited{
 	background-color: #ffeeff;
 	color: #fff;
 	height: 600px;
+	z-index: -1;
 	margin: 0;
 	padding: 200px 0 260px 10%;
 	background-position: center;
@@ -165,6 +166,7 @@ a:visited{
 	background-color: #ddccdd;
 	color: #333;
 	height: 100%;
+	z-index:-1
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 10% 0 20% 0;
@@ -176,6 +178,7 @@ a:visited{
 	background-color: #eeddee;
 	color: #333;
 	height: 100%;
+	z-index:-1;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 10% 0 20% 0;
