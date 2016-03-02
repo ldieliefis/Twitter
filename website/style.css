@@ -1,5 +1,5 @@
 *{
-	font-family: "Helvetica";
+	font-family: Helvetica;
 
 }
 body{
@@ -48,6 +48,18 @@ p{
 	color: #333;
 }
 
+a:link{
+	color: #444;
+	text-decoration: none; 
+}
+
+a:hover{
+	font-style: italic;
+}
+
+a:visited{
+	color: #222;
+}
 
 #header{
 	background: rgb(178,44,98);
@@ -73,7 +85,7 @@ p{
 }
 #nav ul{
 	list-style: none;
-	display: block;
+	display: inline;
 	margin: 0 auto;
 	list-style: none;	
 }
@@ -90,39 +102,36 @@ p{
 	text-decoration: none;
 	
 }
+
 #nav li a.active { 
 	color: #ffeeff; 
 	opacity:1;
 	border-bottom: 2px; 
 
 }
-#nav li a:hover { 
-	color: #dfdfdf; 
+#nav li a:hover {  
 	opacity:1; 
 	}
 
 .sitemap{
 
 	height: 90%;
-	width: 12%;
+	width: 10%;
 	z-index: 1;
 	position: fixed;
 	bottom:0px;
 	float: left;
 	background-repeat: no-repeat;
 	background-color: rgb(178,44,98);
-	
 }
 
 #sitemapNav ul{
 	list-style: none;
 	margin: 0 auto;
-	list-style: none;
-
 }
 
 #sitemapNav li{
-	margin-top: 9px;	
+	margin-top: 10%;	
 	padding-left: 0;
 	
 }
@@ -150,32 +159,32 @@ p{
 
 }
 #deel2, #deel4{
-	background-color: #bfbfbf;
+	background-color: #ddccdd;
 	color: #333;
-	height: 100;
+	height: 100%;
 	margin: 0 auto;
 	overflow: hidden;
-	padding: 200px 0;
+	padding: 10% 0 20% 0;
 	padding-left: 14%;
 	background-size: cover;
 }
 
 #deel3{
-	background-color: #dfdfdf;
+	background-color: #eeddee;
 	color: #333;
 	height: 100%;
 	margin: 0 auto;
 	overflow: hidden;
-	padding: 200px 0;
+	padding: 10% 0 20% 0;
 	padding-left: 14%;
 	background-size: cover;
 }
 
 #footer{
-	background-color: #dfdfdf;
+	background-color: #ffeeff;
 	height: 3em;
 	margin: 0;
-	padding: 0;
+	padding: ;
 	overflow: hidden;
 	text-align: center;
 }
