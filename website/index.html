@@ -4,7 +4,16 @@
 <title>Alles over Twitter</title>
 <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
 <link rel="stylesheet" type="text/css" href="style.css">
-
+<script>
+function veranderZichtbaarheid(){
+	if (document.getElementById('maatschappelijk').style.display='none'){
+		document.getElementById('maatschappelijk').style.display='block';
+	}
+	if(document.getElementById('maatschappelijk').style.display='block') {
+		document.getElementById('maatschappelijk').style.display='none';
+	}
+}
+</script>
 </head>
 
 <body>
@@ -27,23 +36,29 @@
 <div id="sitemap">
 	<nav id ="sitemapNav">
 	<ul class="sitemap">	
-		<li><a href="#startPagina" id="startpagina">Home</a></li>
-			<ul>
+		<li><a href="#startPagina" id="startpagina" onclick="document.getElementById('home').style.display='block'">Home</a></li>
+			<ul> 
+			<span id="home" style='display:block'>
 				<li><b href="#watIsTwitter" id="WatIsTwitter">Wat is Twitter</b></li>
 				<li><b href="#geschiedenis" id="Geschiedenis">Geschiedenis</b></li>
+			</span>
 			</ul>
-		<li><a href="#deel2" id="pagina2">Maatschappelijk</a></li>
+		<li><a href="#deel2" id="pagina2" onclick="veranderZichtbaarheid();">Maatschappelijk</a></li>
 			<ul>
+				<span id = "maatschappelijk" style='display:block'>
 				<li><b href="#doeleinde" id="Doeleinde">Doeleinde</b></li>
+				</span>
 			</ul>
-		<li><a href="#deel3" id="pagina3">Technisch</a></li>
+		<li><a href="#deel3" id="pagina3" onclick="document.getElementById('technisch').style.display='block'">Technisch</a></li>
 			<ul>
+				<span id="technisch">
 				<li><b href="#componenten" id="Componenten">Componenten</b></li>
 				<li><b href="#protocollen" id="Protocollen">Protocollen</b></li>
 				<li><b href="#belang" id="Belang">Belang</b></li>
 				<li><b href="#beveiliging" id="Beveiliging">Beveiliging</b></li>
 				<li><b href="#twitterbots" id="Twitterbots">Twitterbots</b></li>
 				<li><b href="#verelijking" id="Vergelijking">Vergelijking</b></li>
+			</span>
 			</ul>
 		<li><a href="#deel4" id="pagina4">Contact</a></li>
 	</ul>
@@ -111,9 +126,9 @@
     document.getElementById("pagina3").innerHTML = x3;
     	var x4 = document.getElementsByName("pagina4")[0].textContent;
     document.getElementById("pagina4").innerHTML = x4;
-</script>     
-<script type="text/javascript" src="CollapsibleLists.js"></script>    
+</script>    
 
+<!-- <script type="text/javascript" src="CollapsibleLists.js"></script>    -->
 
 </body>
 

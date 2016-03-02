@@ -147,6 +147,9 @@ a:visited{
 	margin-left: -40%;
 }
 
+#sitemapNav span{
+	display:none;
+}
 #startPagina{
 	background-color: #ffeeff;
 	color: #fff;
