@@ -4,9 +4,6 @@
 <title>TWITTER</title>
 <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
 <link rel="stylesheet" type="text/css" href="style.css">
-<!--<script>-->
-	<!-- JQuery script-->
-</script>
 
 </head>
 
@@ -30,13 +27,29 @@
 <div id="sitemap">
 	<nav id ="sitemapNav">
 	<ul class="sitemap">	
-		<li><a href="#startPagina" id="startpagina">Onderdeel 1</a></li>
-		<li><a href="#deel2" id="pagina2">Onderdeel 2</a></li>
-		<li><a href="#deel3" id="pagina3">Onderdeel 3</a></li>
-		<li><a href="#deel4" id="pagina4">Onderdeel 4</a></li>
+		<li><a href="#startPagina" id="startpagina">Home</a></li>
+			<ul>
+				<li><a href="#watIsTwitter" id="WatIsTwitter">Wat is Twitter</a></li>
+				<li><a href="#geschiedenis" id="Geschiedenis">De Geschiedenis van Twitter</a></li>
+			</ul>
+		<li><a href="#deel2" id="pagina2">Maatschappelijk</a></li>
+			<ul>
+				<li><a href="#doeleinde" id="Doeleinde">Het maatschappelijk doeleinde</a></li>
+			</ul>
+		<li><a href="#deel3" id="pagina3">Technisch</a></li>
+			<ul>
+				<li><a href="#componenten" id="Componenten">Componenten</a></li>
+				<li><a href="#protocollen" id="Protocollen">Protocollen</a></li>
+				<li><a href="#belang" id="Belang">Het belang van Twitter</a></li>
+				<li><a href="#beveiliging" id="Beveiliging">Beveiliging</a></li>
+				<li><a href="#twitterbots" id="Twitterbots">Twitterbots</a></li>
+				<li><a href="#verelijking" id="Vergelijking">Vergelijking met andere social media</a></li>
+			</ul>
+		<li><a href="#deel4" id="pagina4">Contact</a></li>
 	</ul>
 	</nav>
 </div>
+
 
 
 <div id="startPagina">
@@ -95,7 +108,9 @@
     document.getElementById("pagina3").innerHTML = x3;
     	var x4 = document.getElementsByName("pagina4")[0].textContent;
     document.getElementById("pagina4").innerHTML = x4;
-</script>         
+</script>     
+<script type="text/javascript" src="CollapsibleLists.js"></script>    
+
 
 </body>
 
