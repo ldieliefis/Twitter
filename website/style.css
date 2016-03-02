@@ -57,7 +57,7 @@ p{
 	z-index: 2;
 	}
 #logo a { 
-	color: #dfdfdf; 
+	color: #ffeeff; 
 	text-decoration: none; 
 	float: left; 
 	margin-left: 1%;
@@ -85,13 +85,13 @@ p{
 }
 
 #nav li a { 
-	color: #dfdfdf; 
+	color: #ffeeff; 
 	font-size: 16px; 
 	text-decoration: none;
 	
 }
 #nav li a.active { 
-	color: #dfdfdf; 
+	color: #ffeeff; 
 	opacity:1;
 	border-bottom: 2px; 
 
@@ -129,7 +129,7 @@ p{
 
 #sitemapNav li a, li b{
 	text-decoration: none;
-	color: #dfdfdf;
+	color: #ffeeff;
 	margin-left: -18%;
 }
 
@@ -139,7 +139,7 @@ p{
 }
 
 #startPagina{
-	background-color: #dfdfdf;
+	background-color: #ffeeff;
 	color: #fff;
 	height: 600px;
 	margin: 0;
