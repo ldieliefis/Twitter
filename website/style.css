@@ -50,7 +50,8 @@ p{
 
 a:link{
 	color: #444;
-	text-decoration: none; 
+	text-decoration:none;
+	font-weight:bold; 
 }
 
 a:hover{
@@ -122,7 +123,7 @@ a:visited{
 	bottom:0px;
 	float: left;
 	background-repeat: no-repeat;
-	background-color: rgb(178,44,98);
+	background-color: rgb(120,60,120);
 }
 
 #sitemapNav ul{
@@ -138,16 +139,12 @@ a:visited{
 
 #sitemapNav li a, li b{
 	text-decoration: none;
+	font-weight: bold;
 	color: #ffeeff;
 	margin-left: -18%;
 }
 
-#sitemapNav li b{
-	font-weight: normal;
-	margin-left: -40%;
-}
-
-#sitemapNav span{
+#sitemapNav div{
 	display:none;
 }
 #startPagina{
