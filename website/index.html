@@ -8,6 +8,7 @@
 <title>Alles over Twitter</title>
 <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
 <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
@@ -62,7 +63,10 @@
 </div>
 
 
+	
+<div id="Pagina"></div>
 
+<!--
 <div id="startPagina">
 		<div class="content">
 			<h1 id="startpagina">Home</h1>
@@ -104,7 +108,7 @@
 
 			Nunc volutpat nibh velit, sit amet ornare elit laoreet ac. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer ac nibh erat. Aliquam dapibus hendrerit massa et tristique. Maecenas commodo dignissim arcu, id suscipit risus tristique vitae. Nam vestibulum urna eget aliquet porttitor. Vestibulum mi tellus, interdum et egestas a, laoreet at tortor. Duis pulvinar sem erat, nec blandit nisl pretium non. Vivamus vel porta urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam vitae blandit dolor. Donec non sodales augue. In id libero eget nisl eleifend condimentum id eu dui. Nulla scelerisque nunc et sagittis tristique. </p>
         </div> 
-   </div>  
+   </div>  -->
 
 <footer id ="footer">
 	<p> &copy; 2016 Nicole van den Dries, Laura Tigchelaar
@@ -141,7 +145,39 @@
 		$("#technisch").toggle();
 		});
 	</script>
-
+	<script >
+		$(document).ready(function() {
+		$('#Pagina').load('home.html');
+		});
+	</script> 
+	<script>
+		$("#Startpagina").click(function(){
+		$(document).ready(function() {
+		$('#Pagina').load('home.html')	
+		});
+		});
+	</script>
+	<script>
+		$("#Pagina2").click(function(){
+		$(document).ready(function() {
+		$('#Pagina').load('maatschappij.html')	
+		});
+		});
+	</script>
+	<script>
+		$("#Pagina3").click(function(){
+		$(document).ready(function() {
+		$('#Pagina').load('technisch.html')	
+		});
+		});
+	</script>
+	<script>
+		$("#Pagina4").click(function(){
+		$(document).ready(function() {
+		$('#Pagina').load('contact.html')	
+		});
+		});
+	</script>
 <!-- <script type="text/javascript" src="CollapsibleLists.js"></script>    -->
 
 </body>
