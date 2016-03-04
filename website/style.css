@@ -67,7 +67,7 @@ a:visited{
 #header{
 	background: rgb(178,44,98);
 	width: 100%; 
-	height: 10%; 	
+	height: 70px; 	
 	position: fixed;
 	z-index: 2;
 	}
@@ -75,7 +75,7 @@ a:visited{
 	color: #ffeeff; 
 	text-decoration: none; 
 	float: left; 
-	margin-left: 1%;
+	margin-left: 18px;
 	font-size: 30px; 
 	margin-top: 20px; 
 	font-weight: bold;
@@ -119,7 +119,7 @@ a:visited{
 .sitemap{
 
 	height: 90%;
-	width: 10%;
+	width: 155px;
 	z-index: 1;
 	position: fixed;
 	bottom:0px;
@@ -139,17 +139,17 @@ a:visited{
 	
 }
 
-#sitemapNav li a, li b{
+#sitemapNav li a{
 	text-decoration: none;
 	font-weight: bold;
 	color: #ffeeff;
-	margin-left: -18%;
+	margin-left: -23px;
 }
 
 #sitemapNav div{
 	display:none;
 }
-#startPagina{
+#startPagina div{
 	background-color: #ffeeff;
 	color: #fff;
 	height: 600px;
@@ -161,7 +161,7 @@ a:visited{
 
 
 }
-#deel2, #deel4{
+#deel2 div, #deel4 div{
 	background-color: #ddccdd;
 	color: #333;
 	height: 100%;
@@ -173,7 +173,7 @@ a:visited{
 	background-size: cover;
 }
 
-#deel3{
+#deel3 div{
 	background-color: #eeddee;
 	color: #333;
 	height: 100%;

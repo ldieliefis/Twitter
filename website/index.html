@@ -134,15 +134,36 @@
 		$("#Home").click(function(){
 		$("#home").toggle();
 		});
+		$("#Home").click(function(){
+		$(document).ready(function() {
+		$('#Pagina').load('home.html')	
+		});
+		});
 	</script>	
 	<script>
 		$("#Maatschappelijk").click(function(){
 		$("#maatschappelijk").toggle();
 		});
+		$("#Maatschappelijk").click(function(){
+		$(document).ready(function() {
+		$('#Pagina').load('maatschappij.html')	
+		});
+		});
 	</script>
+	<script >
+		$("#Contact").click(function(){
+		$(document).ready(function() {
+		$('#Pagina').load('contact.html')	
+		});
+		});</script>
 	<script>
 		$("#Technisch").click(function(){
 		$("#technisch").toggle();
+		});
+		$("#Technisch").click(function(){
+		$(document).ready(function() {
+		$('#Pagina').load('technisch.html')	
+		});
 		});
 	</script>
 	<script >
