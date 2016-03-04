@@ -67,7 +67,7 @@ a:visited{
 #header{
 	background: rgb(178,44,98);
 	width: 100%; 
-	height: 70px; 	
+	height: 10%; 	
 	position: fixed;
 	z-index: 2;
 	}
@@ -75,7 +75,7 @@ a:visited{
 	color: #ffeeff; 
 	text-decoration: none; 
 	float: left; 
-	margin-left: 18px;
+	margin-left: 1%;
 	font-size: 30px; 
 	margin-top: 20px; 
 	font-weight: bold;
@@ -119,7 +119,7 @@ a:visited{
 .sitemap{
 
 	height: 90%;
-	width: 155px;
+	width: 10%;
 	z-index: 1;
 	position: fixed;
 	bottom:0px;
@@ -139,11 +139,11 @@ a:visited{
 	
 }
 
-#sitemapNav li a{
+#sitemapNav li a, li b{
 	text-decoration: none;
 	font-weight: bold;
 	color: #ffeeff;
-	margin-left: -23px;
+	margin-left: -18%;
 }
 
 #sitemapNav div{
