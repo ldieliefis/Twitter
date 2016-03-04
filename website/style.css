@@ -52,10 +52,12 @@ a:link{
 	color: #444;
 	text-decoration:none;
 	font-weight:bold; 
+	cursor: pointer;
 }
 
 a:hover{
 	font-style: italic;
+	cursor: pointer;
 }
 
 a:visited{
