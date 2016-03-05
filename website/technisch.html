@@ -1,3 +1,7 @@
+	<script src="jquery.js"></script>
+	<script src="jquery-ui.min.js"></script>
+
+	
 <div id="startPagina">
 		<div class="content">
 			<h1 id="pagina3">Twitter en techniek</h1>
@@ -67,4 +71,20 @@
 
     		Nunc volutpat nibh velit, sit amet ornare elit laoreet ac. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer ac nibh erat. Aliquam dapibus hendrerit massa et tristique. Maecenas commodo dignissim arcu, id suscipit risus tristique vitae. Nam vestibulum urna eget aliquet porttitor. Vestibulum mi tellus, interdum et egestas a, laoreet at tortor. Duis pulvinar sem erat, nec blandit nisl pretium non. Vivamus vel porta urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam vitae blandit dolor. Donec non sodales augue. In id libero eget nisl eleifend condimentum id eu dui. Nulla scelerisque nunc et sagittis tristique. </p>
         </div> 
+
+        <div id="refs">
+		<div class="content">
+			<h1 id="Refs">Referenties</h1>
+			<p>
+				<ul id="referenties">
+				</ul>
+			</p>
+
+<script>
+	var rij = $.makeArray($(".referenties"));
+	$lijst = $("#referenties");
+	$(rij).each(function(i, object) {
+	$lijst.append("<li>"+ "<a href=" + object.href + "target="+ object.target +">" + object.text + "</li>");
+	});
+</script>
    </div> 
