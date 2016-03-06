@@ -1,13 +1,19 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
+	<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="../../excanvas.min.js"></script><![endif]-->
 	<script src="jquery.js"></script>
 	<script src="jquery-ui.min.js"></script>
-	<script>
-	$(document).ready(function(){
-		$('#Menu').load('nav.html')
-	});
-</script>
+	<script src="jquery.flot.js"></script>
+	
+ 	<script>
+// 	$(document).ready(function(){
+// 		$('#Menu').load('nav.html')
+// 	});
+// </script>
+
+
+
 <title>Alles over Twitter</title>
 <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -30,11 +36,27 @@
 <div id="deel3Home">
 	<div>
 		<h1>De Geschiedenis van Twitter</h1>
-	</div>	
+		In 2006 is Twitter ontwikkeld in opdracht van het bedrijf Obvious Corp (toen nog Odeo), omdat door de komst van iTunes hun website Odeo, waar men geluidsfragmenten kon plaatsen over wat hen bezig hield, publiek verloor (<a href="http://www.isgeschiedenis.nl/nieuws/economie/ontstaansgeschiedenis-van-twitter/" target="_blank"class="referenties"> Van Leur, 2013</a>). Algemeen directeur Evan Williams gaf zijn werknemers de opdracht een dag in de week aan iets anders te besteden dan Odeo, om dit verlies met een nieuw programma te kunnen compenseren (<a href="http://uk.businessinsider.com/how-twitter-was-founded-2011-4?r=US&IR=T" target="_blank" class="referenties">Carlson, 2011</a>). </br></br>
+
+Zo kwamen in 2006 Noah Glass en Jack Dorsey met het eerste concept van Twitter. Men kon een sms bericht sturen, die vervolgens op een website kwam waar iedereen deze kon lezen en erop kon reageren. Omdat een sms bericht maximaal 160 karakters bevatte en ongeveer 20 tekens nodig waren voor de gebruikersnaam e.d., bestond een bericht uit maximaal 140 karakters. De naam Twitter kwam voort uit het idee van een kwetterende vogel. In juli 2006 ging Twitter online (<a href="http://www.isgeschiedenis.nl/nieuws/economie/ontstaansgeschiedenis-van-twitter/" target="_blank"class="referentie"> Van Leur, 2013</a>; <a href="http://uk.businessinsider.com/how-twitter-was-founded-2011-4?r=US&IR=T" target="_blank" class="referentie">Carlson, 2011</a>).</br></br>
+
+Toen na twee maanden slechts een kleine 5000 mensen actief waren op Twitter en de website Odeo nergens naartoe leek te gaan, stelde Evan Williams voor de aandelen van de investeerders terug te kopen. Hier gingen zij mee akkoord. Het samengestelde bedrag van de investeringen was ongeveer vijf miljoen dollar. Het gerucht gaat dat Williams wordt verdacht van oplichterij, omdat hij reeds wist dat Twitter in aanzien zou stijgen. Daar staat tegenover dat het nog een goed half jaar zou duren tot Twitter werkelijk een hit zou worden en dat op het punt dat Williams dit aanbod deed, er zelfs serieus overleg is geweest om het gehele programma op te heffen.</br></br>
+
+Het eerste dat Williams deed nadat hij het bedrijf had gekocht, was het veranderen van de naam Odeo naar Obvious Corp. Het volgende was voor iedereen een grote verrassing: hij ontsloeg Noah Glass, een van de oprichters en bij uitstek de meest enthousiaste medewerker van Twitter. De andere medewerkers waren geshockeerd. Glass voelde zich verraden.</br></br>
+
+Toen was het 2007. In 2007 won Twitter veel naamsbekendheid, doordat ze de South by Southwest award in de categorie blogs wonnen. South by Southwest is een groot festival met muziek, film en interactieve media, waar onder andere John Mayer en James Blunt zijn geworven door een platenlabel (Miller, 2006; <a href = "https://en.wikipedia.org/wiki/John_Mayer" target = "_blank" class="referenties">John Mayer, 2016</a>).</br></br>
+
+Sindsdien is Twitter enorm gegroeid en wereldwijd bekend geworden. In de grafiek hieronder is weergegeven hoe het gemiddelde aantal tweets per dag over de afgelopen jaren is toegenomen. Er is duidelijk te zien dat in 2011 de groei het grootst was en dat het aantal momenteel aan het dalen is (<a href="http://uk.businessinsider.com/tweets-on-twitter-is-in-serious-decline-2016-2" target="_blank" class="referenties">Edwards, 2016</a>; <a href="http://www.internetlivestats.com/twitter-statistics/" target="_blank" class="referenties">Internet Live Stats, 2016</a>).
+		
+	</div>
 </div>
+<div id="placeholder" class="placeholder" style="height:450px"></div>
 <div id="referentie">
 	<div>
 		<h1>Referenties</h1>
+		<p>
+		<ul id="referenties"></ul>
+		</p>
 	</div>	
 </div>
 </div>
@@ -47,6 +69,15 @@ $lijst = $("#referenties");
 $(rij).each(function(i, object) {
 $lijst.append("<li>"+ "<a href=" + object.href + "target="+ object.target +">" + object.text + "</li>");
 });</script>
+
+<script>
+	$(function() {
+		var tweets = [["2006", 1], [2007, 5000], [2008, 300000], [2009, 2500000], [2010,50000000],[2011,100000000],[2012,340000000],[2013,500000000],[2014,650000000],[2015,400000000]]
+
+		$.plot("#placeholder", [tweets], {xaxis:{tickDecimals:0}});
+	});
+</script>
+
 
 
 <footer id ="footer">
