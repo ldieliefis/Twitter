@@ -183,6 +183,7 @@ a.referenties:hover, a.referentie:hover{
 	padding: 10% 0 20% 0;
 	padding-left: 14%;
 	background-size: cover;
+	overflow: hidden;
 }
 
 #deel3Home div, #deel3Tech div, #deel5Tech div, #deel7Tech div{
@@ -211,12 +212,15 @@ a.referenties:hover, a.referentie:hover{
 	background-size: cover;
 
 }
-#footer{
+footer{
 	background-color: #ffeeff;
 	height: 3em;
-	margin: 0;
-	overflow: hidden;
+	width: 100%;
 	text-align: center;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+
 }
 
 .placeholder{
