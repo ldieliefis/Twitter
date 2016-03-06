@@ -194,10 +194,13 @@ a:visited{
 	background-size: cover;
 
 }
-#footer{
+footer{
 	background-color: #ffeeff;
 	height: 3em;
-	margin: 0;
-	overflow: hidden;
+	width: 100%;
 	text-align: center;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+
 }
