@@ -19,30 +19,30 @@
 		<li><a id="Home">Home</a>
 			<div id="home">
 				<ul> 
-				<li><a href="#startPagina" id="WatIsTwitter">Wat is Twitter</a></li>
-				<li><a href="#geschiedenis" id="Geschiedenis">Geschiedenis</a></li>
+				<li><a href="index.html#deel2Home" id="WatIsTwitter">Wat is Twitter</a></li>
+				<li><a href="index.html#deel3Home" id="Geschiedenis">Geschiedenis</a></li>
 			</ul> 
 			</div>
 		</li>
 		<li><a id="Maatschappelijk">Maatschappelijk</a>
 				<div id="maatschappelijk">
 					<ul>
-				<li><a href="#deel2" id="Doeleinde">Doeleinde</a></li>
+				<li><a href="maatschappij.html#deel2Maat" id="Doeleinde">Doeleinde</a></li>
 			</ul>
 				</div>
 		</li> 
 		<li><a id="Technisch">Technisch</a>
 				<div id="technisch">
 					<ul>
-				<li><a href="#deel3" id="Componenten">Componenten</a></li>
-				<li><a href="technisch.#protocollen" id="Protocollen">Protocollen</a></li>
-				<li><a href="#belang" id="Belang">Belang</a></li>
-				<li><a href="#beveiliging" id="Beveiliging">Beveiliging</a></li>
-				<li><a href="#twitterbots" id="Twitterbots">Twitterbots</a></li>
-				<li><a href="#vergelijking" id="Vergelijking">Vergelijking</a></li>
+				<li><a href="technisch.html#deel2Tech" id="Componenten">Componenten</a></li>
+				<li><a href="technisch.html#deel3Tech" id="Protocollen">Protocollen</a></li>
+				<li><a href="technisch.html#deel4Tech" id="Belang">Belang</a></li>
+				<li><a href="technisch.html#deel5Tech" id="Beveiliging">Beveiliging</a></li>
+				<li><a href="technisch.html#deel6Tech" id="Twitterbots">Twitterbots</a></li>
+				<li><a href="technisch.html#deel7Tech" id="Vergelijking">Vergelijking</a></li>
 			</ul>
 			</div></li>
-		<li><a href="#deel4">Contact</a></li>
+		<li><a href="contact.html#deel2Contact">Contact</a></li>
 	</ul>
 	</nav>
 </div>
@@ -58,14 +58,20 @@
 		$("#maatschappelijk").toggle();
 		});
 	</script>
-	<script >
-		$("#Contact").click(function(){
-		$(document).ready(function() {
-		$('#Pagina').load('contact.html')	
-		});
-		});</script>
 	<script>
 		$("#Technisch").click(function(){
 		$("#technisch").toggle();
 		});
 	</script>
+	
+	
+	
+<!--
+	 $(this).siblings().toggle();
+        //you need to pass string values, your variables display & block was not defined
+        localStorage.setItem('display', $(this).siblings().is(':visible'));
+    });
+    var block = localStorage.getItem('display');
+    if (block == 'true') {
+        $('#bar').show()
+    }-->
