@@ -149,23 +149,22 @@ a:visited{
 #sitemapNav div{
 	display:none;
 }
-#startPagina div{
+#deel1Home div, #deel1Maat div, #deel1Tech div, #deel1Contact div{
 	background-color: #ffeeff;
 	color: #fff;
 	height: 600px;
-	z-index: -1;
 	margin: 0;
 	padding: 200px 0 260px 10%;
+	padding-left: 14%;
 	background-position: center;
 	background-repeat: no-repeat;
 
 
 }
-#deel2 div, #deel4 div{
+#deel2Home div,#deel2Tech div,#deel4Tech div,#deel6Tech div, #deel2Maat div{
 	background-color: #ddccdd;
 	color: #333;
 	height: 100%;
-	z-index:-1;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 10% 0 20% 0;
@@ -173,11 +172,10 @@ a:visited{
 	background-size: cover;
 }
 
-#deel3 div{
+#deel3Home div, #deel3Tech div, #deel5Tech div, #deel7Tech div{
 	background-color: #eeddee;
 	color: #333;
 	height: 100%;
-	z-index:-1;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 10% 0 20% 0;
@@ -185,6 +183,17 @@ a:visited{
 	background-size: cover;
 }
 
+#referentie div{
+	background-color: #ffeeff;
+	color: #333;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 10% 0 20% 0;
+	padding-left: 14%;
+	background-size: cover;
+
+}
 #footer{
 	background-color: #ffeeff;
 	height: 3em;

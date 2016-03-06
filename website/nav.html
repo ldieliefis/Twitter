@@ -1,0 +1,71 @@
+<header id="header">
+<div>
+<div id="logo"><a href="">Alles over Twitter</a></div>
+<nav id="nav">
+	<ul>
+		<li><a href="index.html" id="Startpagina"> Home </a></li>
+		<li><a href="maatschappij.html" id="PaginaMaatschappij"> Twitter in de maatschappij</a> </li>
+		<li><a href="technisch.html" id="PaginaTechniek"> Twitter en techniek</a></li>
+		<li><a href="contact.html" id="PaginaContact"> Contact </a></li>
+	</ul>
+</nav>
+
+</div>
+</header>	
+
+<div id="sitemap">
+	<nav id ="sitemapNav">
+	<ul class="sitemap">
+		<li><a id="Home">Home</a>
+			<div id="home">
+				<ul> 
+				<li><a href="#startPagina" id="WatIsTwitter">Wat is Twitter</a></li>
+				<li><a href="#geschiedenis" id="Geschiedenis">Geschiedenis</a></li>
+			</ul> 
+			</div>
+		</li>
+		<li><a id="Maatschappelijk">Maatschappelijk</a>
+				<div id="maatschappelijk">
+					<ul>
+				<li><a href="#deel2" id="Doeleinde">Doeleinde</a></li>
+			</ul>
+				</div>
+		</li> 
+		<li><a id="Technisch">Technisch</a>
+				<div id="technisch">
+					<ul>
+				<li><a href="#deel3" id="Componenten">Componenten</a></li>
+				<li><a href="technisch.#protocollen" id="Protocollen">Protocollen</a></li>
+				<li><a href="#belang" id="Belang">Belang</a></li>
+				<li><a href="#beveiliging" id="Beveiliging">Beveiliging</a></li>
+				<li><a href="#twitterbots" id="Twitterbots">Twitterbots</a></li>
+				<li><a href="#vergelijking" id="Vergelijking">Vergelijking</a></li>
+			</ul>
+			</div></li>
+		<li><a href="#deel4">Contact</a></li>
+	</ul>
+	</nav>
+</div>
+
+
+	<script>
+		$("#Home").click(function(){
+		$("#home").toggle();
+		});
+	</script>
+	<script>
+		$("#Maatschappelijk").click(function(){
+		$("#maatschappelijk").toggle();
+		});
+	</script>
+	<script >
+		$("#Contact").click(function(){
+		$(document).ready(function() {
+		$('#Pagina').load('contact.html')	
+		});
+		});</script>
+	<script>
+		$("#Technisch").click(function(){
+		$("#technisch").toggle();
+		});
+	</script>
