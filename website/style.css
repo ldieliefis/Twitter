@@ -230,3 +230,7 @@ footer{
   line-height: 1.2em;
 }
 
+img {
+	height: 400px;
+	float: left;
+}
