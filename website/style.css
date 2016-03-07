@@ -161,7 +161,7 @@ header{
 	color: #111;
 	height: 600px;
 	margin: 0;
-	padding: 200px 0 260px 10%;
+	padding: 200px 0 200px 10%;
 	padding-left: 14%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -179,7 +179,7 @@ header{
 	height: 100%;
 	margin: 0 auto;
 	overflow: hidden;
-	padding: 10% 0 20% 0;
+	padding: 10% 0 10% 0;
 	padding-left: 14%;
 	background-size: cover;
 	overflow: hidden;
@@ -191,7 +191,7 @@ header{
 	height: 100%;
 	margin: 0 auto;
 	overflow: hidden;
-	padding: 10% 0 20% 0;
+	padding: 10% 0 10% 0;
 	padding-left: 14%;
 	
 }
@@ -233,4 +233,10 @@ footer{
 img {
 	height: 400px;
 	float: left;
+}
+
+#twitterLogo{
+	height: 200px;
+	float: right;
+	margin-right: 10%; 
 }
