@@ -24,7 +24,13 @@
 </div>
 <div id="deel2Tech">
 	<div>
-		<h1>Componenten</h1>
+		<h1>Technische Ontwikkelingen</h1>
+		<p>
+			Twitter is in eerste instantie geschreven met Ruby on Rails, een framework voor webapplicaties van Ruby, een dynamische programmeertaal. Ruby on Rails is ontwikkeld voor het maken van praktische webapplicaties, wat het een geschikt framework maakte voor Twitter op dat moment. Dit is zoals bijna alle software die de ontwikkelaars van Twitter hebben gebruikt open-source software. Ze gebruikten toen ook nog een MySQL database, dit leidde al snel tot problemen toen het gebruik van Twitter toenam. De tweets konden niet meer snel genoeg opgehaald worden van de database of erop opgeslagen worden. Om dit te voorkomen werd in 2007 en 2008 de MySQL database vervangen door de queue server Starling van Ruby. Starling is ontwikkeld door Blaine Cook, een programmeur bij Twitter. Met Starling worden de tweets in de achtergrond afgehandeld zodat de reactietijd van de front-end er niet onder zou lijden. Maar in 2009 bleek dit nog niet genoeg tweets aan te kunnen. De queue server is toen herschreven in Scala, een programmeertaal die op Java Virtual Machine (JVM) draait, dit heeft ervoor gezorgd dat twitter in plaats van 200 – 300 requests per seconde per host, 10.000-20.000 requests per seconde per host aankon </p>(<a href="https://blog.twitter.com/2013/new-tweets-per-second-record-and-how" target="_blank" class="referenties">Kikorian, 2013</a>; <a href="http://www.infoq.com/articles/twitter-java-use" target="_blank" class="referenties">Humble, 2011</a>). <br/><p>
+			Nadat de back-end volledig was herschreven in Scala, zijn ook de Ruby on Rails front-end servers voor het zoeken vervangen voor de Java server Blender. Dit maakte Twitter ongeveer 3 keer sneller dan voorheen. Dit komt door de nu volledig asynchrone communicatie, wat ervoor zorgt dat nooit threads staan te wachten op een respons. Ook wordt er veel data van de back-end samengevoegd, als alle data die nodig is voor een tweet wordt samengevoegd en dan verstuurd wordt, zal dit vele malen efficiënter zijn dan het versturen van meerde datasets </p>(<a href="https://blog.twitter.com/2011/twitter-search-is-now-3x-faster" target="_blank" class="referenties">Gade, 2011</a>).
+			<br/><br/><p>
+			Nu er geen MySQL databases meer gebruikt worden, krijgt iedere tweet een uniek ID van Snowflake, een programma dat geschreven om unieke ID’s te genereren. Dan gaat de tweet verder naar Gizzard, een programma dat verspreid databases creëert, de tweet hashed en deze dan oplaat in een database. 
+			FlockDB, een verspreide database, wordt ook gebruikt door Twitter. Twitter gebruikt het om de relaties tussen gebruikers vast te leggen, omdat FlockDB een simpel programma is en zo min mogelijk probeert te doen, reageert het snel en is het geschikt voor websites zoals Twitter die veel operaties per seconde aanvragen. In 2010 kon de Twitter FlockDB cluster bij drukte hoogtepunten wel 20.000 writes per seconde en 100.000 reads per seconde aan </p>(<a href="https://github.com/twitter/flockdb" target="_blank" class="referenties">twitter/flockdb, 2012</a>).
 	</div>
 </div>	
 <div id="deel3Tech">
@@ -45,6 +51,23 @@
 <div id="deel6Tech">
 	<div>
 		<h1>Twitterbots</h1>
+		<p>
+			Twitterbots zijn programma’s die geschreven zijn om automatisch tweets te plaatsen, te retweeten of te antwoorden op andere tweets, ook kunnen ze andere twitter accounts volgen. Er zijn veel verschillende soorten bots, met verschillende doeleinden.<br/>
+Soorten twitterbots:</p><br/>
+
+
+			<ul>
+				<li>Spam: advertenties, promotie</li>
+				<li>Retweeten van tweets die bepaalde woorden of zinnen bevatten</li>
+				<li>Tweets genereren die dezelfde stijl hebben als die van een bepaalde gebruiker</li>
+				<li>Reageren op tweets met bepaalde spel- of grammaticafouten </li>
+				<li>Het regelmatig tweeten van bepaalde woorden of zinnen</li>
+			</ul>
+<br/><p>
+Twitterbots zijn programma’s die via de Application Programming Interface (API) direct met de code van Twitter zelf kunnen communiceren. Door de uitgebreide API die voor bijna iedere functie die op de site te vinden is een methode heeft, kan een account volledig van buitenaf bestuurd worden. Een groot aantal programmeertalen kan gebruikt worden voor het schrijven van een Twitterbot, dit maakt het toegankelijk voor veel programmeurs om een bot te ontwikkelen. Het ontwikkelen en gebruiken van bots is zodanig populair dat in 2014 ongeveer 8,5% van de actieve gebruikers van Twitter bots waren, dit percentage is exclusief de 5% spambots die actief waren </p>(<a href="http://www.newyorker.com/tech/elements/the-rise-of-twitter-bots" target="_blank" class="referenties">Dubbin, 2013</a>).
+
+		
+
 	</div>	
 </div>	
 <div id="deel7Tech">
@@ -57,7 +80,7 @@
 		<h1>Referenties</h1>
 		<p>
 		<ul id="referenties"></ul>
-		</p>
+		
 	</div>	
 </div>	
 </div>
